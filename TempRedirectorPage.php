@@ -68,6 +68,10 @@ class TempRedirectorPage_Controller extends RedirectorPage_Controller {
 		// if however you have special functions in your Page or other subclasses you might want to review this
 		//parent::init();
 
+		if($this->HTTPStatusCode == 0) {
+			$this->HTTPStatusCode = 307;
+		}
+		
 		if($link = $this->redirectionLink()) {
 			$this->redirect($link, $this->HTTPStatusCode);
 			return;
