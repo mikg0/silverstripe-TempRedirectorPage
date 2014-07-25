@@ -17,5 +17,5 @@ Unfortunately there does not seem to be a solution to fix permanent redirects, o
 published.
 
 This page is no solution neither for already published 301 redirects, but once you are
-aware of the problem you might prefer using a TempRedirectorPage with a 307 or 302 status code
+aware of the problem, you might prefer using a TempRedirectorPage with a 307 or 302 status code
 instead of the RedirectorPage.
